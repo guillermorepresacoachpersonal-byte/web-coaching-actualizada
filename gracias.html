@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fafaf7">
+<title>Gracias por tu solicitud | Guillermo Represa</title>
+<meta name="description" content="Tu solicitud de sesión gratuita ha sido recibida. Guillermo se pondrá en contacto contigo en las próximas horas.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://guillermorepresa.com/gracias.html">
+<link rel="icon" type="image/svg+xml" href="logo-coaching.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     TRACKING DE CONVERSIÓN (opcional)
+     Esta página marca una "conversión" en GA4 / Meta Pixel.
+     Descomenta y sustituye IDs cuando los tengas configurados.
+============================================================ -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+  gtag('event', 'conversion', { 'send_to': 'G-XXXXXXXXXX/RESERVA' });
+</script>
+-->
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blanco-puro: #ffffff; --off-white: #fafaf7; --off-white-2: #f5f5f1;
+    --linea: #e4e4df; --teal: #1f5b5e; --teal-suave: #8fb4b6;
+    --teal-rgba-10: rgba(31, 91, 94, 0.1); --teal-rgba-05: rgba(31, 91, 94, 0.05);
+    --negro: #1a1d1d; --gris: #6b6b66;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  body {
+    font-family: 'Inter', sans-serif; color: var(--negro);
+    background: var(--off-white); line-height: 1.6;
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 40px 24px; text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 600px; }
+  .icon-circle {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--teal-rgba-05);
+    border: 2px solid var(--teal-rgba-10);
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    margin-bottom: 32px;
+    animation: scaleIn 0.6s var(--ease) both;
+  }
+  .icon-circle svg {
+    width: 44px; height: 44px;
+    color: var(--teal);
+    animation: drawCheck 0.7s var(--ease) 0.2s both;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    line-height: 1.1; letter-spacing: -0.025em;
+    font-weight: 300; color: var(--negro); margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeUp 0.7s var(--ease) 0.3s forwards;
+  }
+  h1 em { font-style: italic; color: var(--teal); font-weight: 300; }
+  .lead {
+    font-size: 1.0625rem; color: var(--gris);
+    margin-bottom: 12px; max-width: 480px; margin-left: auto; margin-right: auto;
+    opacity: 0;
+    animation: fadeUp 0.7s var(--ease) 0.45s forwards;
+  }
+  .info-box {
+    margin: 32px 0; padding: 28px 32px;
+    background: var(--blanco-puro); border: 1px solid var(--linea);
+    border-radius: 1.5rem; text-align: left;
+    opacity: 0;
+    animation: fadeUp 0.7s var(--ease) 0.6s forwards;
+  }
+  .info-box h2 {
+    font-family: 'Fraunces', serif; font-size: 1.125rem;
+    font-weight: 500; color: var(--negro); margin-bottom: 16px;
+  }
+  .info-box ol {
+    list-style: none; counter-reset: step;
+  }
+  .info-box ol li {
+    counter-increment: step;
+    padding: 12px 0; padding-left: 40px;
+    position: relative;
+    color: var(--gris); font-size: 0.95rem;
+    border-top: 1px solid var(--linea);
+  }
+  .info-box ol li:first-child { border-top: none; }
+  .info-box ol li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 14px;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--teal-rgba-05);
+    color: var(--teal);
+    font-size: 0.75rem; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .info-box strong { color: var(--negro); font-weight: 500; }
+
+  .actions {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    opacity: 0;
+    animation: fadeUp 0.7s var(--ease) 0.75s forwards;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.9rem; font-weight: 500;
+    transition: all 0.25s var(--ease);
+  }
+  .btn-primary {
+    background: var(--negro); color: var(--off-white);
+  }
+  .btn-primary:hover { background: var(--teal); transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent; color: var(--teal);
+    border: 1px solid var(--linea);
+  }
+  .btn-ghost:hover { border-color: var(--teal); background: var(--blanco-puro); }
+
+  .footer-link {
+    margin-top: 60px;
+    font-size: 0.875rem; color: var(--gris);
+    opacity: 0;
+    animation: fadeUp 0.7s var(--ease) 0.9s forwards;
+  }
+  .footer-link a { color: var(--teal); text-decoration: none; }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes drawCheck {
+    from { stroke-dashoffset: 50; }
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="icon-circle">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" stroke-dasharray="50" stroke-dashoffset="0"/>
+    </svg>
+  </div>
+
+  <h1>Gracias.<br><em>Pronto hablamos.</em></h1>
+
+  <p class="lead">He recibido tu solicitud de sesión gratuita. Te responderé en las próximas horas (siempre antes de 24 h en días laborables).</p>
+
+  <div class="info-box">
+    <h2>Qué pasa ahora</h2>
+    <ol>
+      <li>Recibirás un <strong>mensaje mío por WhatsApp o email</strong> con dos o tres horarios disponibles.</li>
+      <li>Confirmamos un horario y, si la sesión es presencial, también la <strong>ciudad y el lugar concreto</strong>.</li>
+      <li>El día de la cita, conectamos por <strong>videollamada o nos vemos en persona</strong>. 30 minutos, sin compromiso.</li>
+    </ol>
+  </div>
+
+  <div class="actions">
+    <a href="index.html#metodo" class="btn btn-primary">Ver el método</a>
+    <a href="blog/" class="btn btn-ghost">Mientras tanto, lee el blog</a>
+  </div>
+
+  <p class="footer-link">
+    ¿Algo urgente o has cambiado de opinión? Escríbeme directamente al <a href="https://wa.me/34625192890" target="_blank" rel="noopener">WhatsApp</a>.
+  </p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "slug": "sobrepensamiento-como-salir-del-bucle",
+      "title": "Sobrepensamiento: por qué tu cabeza no para y cómo salir del bucle",
+      "excerpt": "Pensar mucho no es lo mismo que pensar bien. Identifica los 5 bucles mentales más comunes, entiende por qué se vuelven crónicos y descubre los 3 movimientos que rompen la dinámica.",
+      "category": "Coaching humanista",
+      "date": "2026-05-22",
+      "dateDisplay": "22 de mayo de 2026",
+      "readTime": "7 min de lectura",
+      "icon": "∞",
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "autoexigencia-cuando-lo-bien-no-es-suficiente",
+      "title": "Autoexigencia: cuando \"lo bien\" nunca es suficiente",
+      "excerpt": "Por qué la autoexigencia se vuelve crónica, qué la mantiene activa y cómo cambiar el sistema de medición sin perder rendimiento.",
+      "category": "Coaching humanista",
+      "date": "2026-05-23",
+      "dateDisplay": "23 de mayo de 2026",
+      "readTime": "6 min",
+      "icon": "↑",
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "coaching-humanista-vs-psicoterapia",
+      "title": "Coaching humanista vs psicoterapia: ¿cuál necesito?",
+      "excerpt": "Diferencias claras entre ambas disciplinas, cuándo elegir cada una y cómo saber qué necesitas tú ahora. Sin tecnicismos.",
+      "category": "Recursos",
+      "date": "2026-05-23",
+      "dateDisplay": "23 de mayo de 2026",
+      "readTime": "6 min",
+      "icon": "⇄",
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "primera-sesion-coaching-que-esperar",
+      "title": "Primera sesión de coaching: qué pasa, qué no pasa y qué te llevas",
+      "excerpt": "Sin protocolo rígido, sin diagnósticos, sin compromisos forzados. Qué ocurre exactamente en la primera sesión, qué nunca va a pasar y qué te llevas al terminar.",
+      "category": "Recursos",
+      "date": "2026-05-23",
+      "dateDisplay": "23 de mayo de 2026",
+      "readTime": "6 min",
+      "icon": "→",
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "emociones-ansiedad-bloqueo-mental",
+      "title": "Emociones, ansiedad y bloqueo mental: cuando el cuerpo sabe antes que la cabeza",
+      "excerpt": "La ansiedad no es el problema: es la señal. Qué comunican las emociones difíciles, por qué el bloqueo mental tiene sentido y qué mueve las cosas de verdad.",
+      "category": "Coaching humanista",
+      "date": "2026-05-23",
+      "dateDisplay": "23 de mayo de 2026",
+      "readTime": "7 min",
+      "icon": "◐",
+      "featured": false,
+      "published": true
+    }
+  ]
+}

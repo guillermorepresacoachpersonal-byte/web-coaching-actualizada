@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Fondo -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f5b5e"/>
+      <stop offset="100%" stop-color="#0f3438"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#8fb4b6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8fb4b6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Logo (cabeza con corazón, estilizado) -->
+  <g transform="translate(80, 80)" fill="#8fb4b6">
+    <!-- C exterior -->
+    <path d="M 100 50 A 70 70 0 1 0 100 190 L 90 190 A 50 50 0 1 1 90 50 Z" opacity="0.85"/>
+    <!-- silueta cabeza interna -->
+    <circle cx="120" cy="120" r="35" fill="#8fb4b6" opacity="0.9"/>
+    <!-- corazón -->
+    <path d="M 113 115 C 113 112 116 109 119 112 C 122 109 125 112 125 115 C 125 119 119 124 119 124 C 119 124 113 119 113 115 Z" fill="#f5f0e6"/>
+  </g>
+
+  <!-- Marca textual -->
+  <text x="80" y="340"
+        font-family="Fraunces, Georgia, serif"
+        font-size="74"
+        font-weight="300"
+        fill="#fafaf7"
+        letter-spacing="-2">
+    Guillermo Represa
+  </text>
+
+  <text x="80" y="395"
+        font-family="Fraunces, Georgia, serif"
+        font-size="38"
+        font-style="italic"
+        font-weight="300"
+        fill="#8fb4b6"
+        letter-spacing="-0.5">
+    Coach personal humanista
+  </text>
+
+  <!-- Línea separadora -->
+  <rect x="80" y="430" width="60" height="2" fill="#8fb4b6"/>
+
+  <!-- Tagline -->
+  <text x="80" y="478"
+        font-family="Inter, sans-serif"
+        font-size="22"
+        font-weight="400"
+        fill="rgba(250, 250, 247, 0.85)">
+    Salir del bucle. Decidir. Avanzar.
+  </text>
+
+  <!-- Footer info -->
+  <text x="80" y="555"
+        font-family="Inter, sans-serif"
+        font-size="16"
+        font-weight="500"
+        fill="rgba(250, 250, 247, 0.6)"
+        letter-spacing="1">
+    GUILLERMOREPRESA.COM
+  </text>
+
+  <text x="80" y="580"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        font-weight="400"
+        fill="rgba(250, 250, 247, 0.45)">
+    Sesiones presenciales (Valladolid · Llanes · Madrid) y online
+  </text>
+
+  <!-- Sello ASESCO -->
+  <g transform="translate(950, 480)">
+    <rect x="0" y="0" width="170" height="80" rx="40" fill="rgba(143, 180, 182, 0.15)" stroke="rgba(143, 180, 182, 0.4)" stroke-width="1.5"/>
+    <text x="85" y="35"
+          font-family="Inter, sans-serif"
+          font-size="11"
+          font-weight="500"
+          fill="#8fb4b6"
+          text-anchor="middle"
+          letter-spacing="1.5">
+      CERTIFICADO
+    </text>
+    <text x="85" y="58"
+          font-family="Fraunces, Georgia, serif"
+          font-size="22"
+          font-weight="500"
+          fill="#fafaf7"
+          text-anchor="middle">
+      ASESCO
+    </text>
+  </g>
+
+  <!-- Decoración: ondas concéntricas (símbolo de bucle/ondas mentales) -->
+  <g transform="translate(950, 180)" fill="none" stroke="#8fb4b6" stroke-width="1.5" opacity="0.45">
+    <circle cx="0" cy="0" r="40"/>
+    <circle cx="0" cy="0" r="70"/>
+    <circle cx="0" cy="0" r="100" opacity="0.7"/>
+    <circle cx="0" cy="0" r="130" opacity="0.4"/>
+    <circle cx="0" cy="0" r="160" opacity="0.2"/>
+  </g>
+
+</svg>

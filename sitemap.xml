@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home -->
+  <url>
+    <loc>https://guillermorepresa.com/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://guillermorepresa.com/guillermo-represa-coach.jpg</image:loc>
+      <image:caption>Guillermo Represa, coach personal humanista</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog index -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog post 1: Sobrepensamiento -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/sobrepensamiento-como-salir-del-bucle.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post 2: Autoexigencia -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/autoexigencia-cuando-lo-bien-no-es-suficiente.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post 3: Coaching vs psicoterapia -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/coaching-humanista-vs-psicoterapia.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post 4: Primera sesión de coaching -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/primera-sesion-coaching-que-esperar.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post 5: Emociones, ansiedad y bloqueo mental -->
+  <url>
+    <loc>https://guillermorepresa.com/blog/emociones-ansiedad-bloqueo-mental.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Servicio -->
+  <url>
+    <loc>https://guillermorepresa.com/servicio.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Aviso legal -->
+  <url>
+    <loc>https://guillermorepresa.com/aviso-legal.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Política privacidad -->
+  <url>
+    <loc>https://guillermorepresa.com/politica-privacidad.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

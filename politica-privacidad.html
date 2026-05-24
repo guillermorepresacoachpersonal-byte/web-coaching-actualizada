@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fafaf7">
+<title>Política de Privacidad | Guillermo Represa</title>
+<meta name="description" content="Política de privacidad de Guillermo Represa, coach personal humanista. Información sobre tratamiento de datos personales conforme al RGPD y LOPDGDD.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://guillermorepresa.com/politica-privacidad.html">
+<link rel="icon" type="image/svg+xml" href="logo-coaching.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blanco-puro: #ffffff; --off-white: #fafaf7; --off-white-2: #f5f5f1;
+    --linea: #e4e4df; --teal: #1f5b5e; --teal-suave: #8fb4b6;
+    --teal-rgba-10: rgba(31, 91, 94, 0.1); --teal-rgba-05: rgba(31, 91, 94, 0.05);
+    --negro: #1a1d1d; --gris: #6b6b66; --gris-claro: #9c9c98;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif; color: var(--negro);
+    background: var(--off-white); line-height: 1.7; font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .nav-sticky {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 999px; padding: 8px 8px 8px 24px;
+    display: flex; align-items: center; gap: 32px;
+    box-shadow: 0 8px 32px -8px rgba(31, 91, 94, 0.15);
+    border: 1px solid rgba(31, 91, 94, 0.08);
+    max-width: calc(100% - 40px);
+  }
+  .nav-sticky .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Fraunces', serif; font-size: 0.95rem;
+    color: var(--teal); text-decoration: none;
+    letter-spacing: -0.01em; white-space: nowrap;
+  }
+  .nav-sticky .brand img { width: 26px; height: 26px; border-radius: 6px; }
+  .nav-sticky-cta {
+    background: var(--negro); color: var(--off-white);
+    padding: 8px 18px; border-radius: 999px; font-size: 0.8rem;
+    text-decoration: none; font-weight: 500;
+    transition: all 0.25s var(--ease); white-space: nowrap; margin-left: auto;
+  }
+  .nav-sticky-cta:hover { background: var(--teal); }
+  main { max-width: 760px; margin: 0 auto; padding: 140px 24px 60px; }
+  .breadcrumb {
+    font-size: 0.8125rem; color: var(--gris);
+    margin-bottom: 32px; display: flex; align-items: center; gap: 8px;
+  }
+  .breadcrumb a { color: var(--teal); text-decoration: none; }
+  .breadcrumb-sep { color: var(--gris-claro); }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1; letter-spacing: -0.025em;
+    font-weight: 400; color: var(--negro); margin-bottom: 12px;
+  }
+  .subtitulo {
+    color: var(--gris); font-size: 0.95rem;
+    margin-bottom: 40px; padding-bottom: 24px;
+    border-bottom: 1px solid var(--linea);
+  }
+  h2 {
+    font-family: 'Fraunces', serif; font-size: 1.5rem;
+    font-weight: 500; color: var(--negro);
+    margin: 40px 0 14px; letter-spacing: -0.015em;
+  }
+  h3 {
+    font-family: 'Fraunces', serif; font-size: 1.125rem;
+    font-weight: 500; color: var(--negro); margin: 28px 0 10px;
+  }
+  p { color: var(--negro); font-size: 1rem; line-height: 1.7; margin-bottom: 16px; }
+  ul { list-style: none; margin: 0 0 16px 0; padding: 0; }
+  ul li {
+    position: relative; padding-left: 24px; margin-bottom: 10px;
+    font-size: 1rem; color: var(--negro); line-height: 1.6;
+  }
+  ul li::before {
+    content: ''; position: absolute; left: 0; top: 12px;
+    width: 12px; height: 1px; background: var(--teal);
+  }
+  ul li strong { color: var(--negro); font-weight: 600; }
+  .datos-box {
+    background: var(--blanco-puro); border: 1px solid var(--linea);
+    border-radius: 1rem; padding: 24px 28px; margin: 20px 0;
+  }
+  .datos-box p { margin-bottom: 8px; font-size: 0.95rem; }
+  .datos-box strong { color: var(--teal); font-weight: 600; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 20px 0;
+    background: var(--blanco-puro); border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--linea); font-size: 0.9rem;
+  }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--linea); }
+  th { background: var(--off-white-2); font-weight: 600; color: var(--teal); font-size: 0.85rem; }
+  tr:last-child td { border-bottom: none; }
+  a.inline {
+    color: var(--teal); text-decoration: underline;
+    text-decoration-color: var(--teal-suave); text-underline-offset: 2px;
+  }
+  footer {
+    padding: 40px 24px; text-align: center; color: var(--gris);
+    font-size: 0.8125rem; border-top: 1px solid var(--linea); margin-top: 60px;
+  }
+  footer a { color: var(--teal); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav class="nav-sticky">
+  <a href="index.html#inicio" class="brand">
+    <img src="logo-coaching.svg" alt="">
+    <span>Guillermo Represa</span>
+  </a>
+  <a href="index.html#contacto" class="nav-sticky-cta">Sesión gratuita</a>
+</nav>
+
+<main>
+
+  <nav class="breadcrumb" aria-label="Migas de pan">
+    <a href="index.html">Inicio</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Política de Privacidad</span>
+  </nav>
+
+  <h1>Política de Privacidad</h1>
+  <p class="subtitulo">Última actualización: 22 de mayo de 2026</p>
+
+  <p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa a continuación sobre el tratamiento de los datos personales que pudieran recogerse a través de este sitio web.</p>
+
+  <h2>1. Responsable del tratamiento</h2>
+
+  <div class="datos-box">
+    <p><strong>Responsable:</strong> Guillermo Represa</p>
+    <p><strong>Actividad:</strong> Coach Personal Humanista</p>
+    <p><strong>Acreditación:</strong> ASESCO CPS 10326</p>
+    <p><strong>NIF:</strong> 12418773S</p>
+    <p><strong>Dirección profesional:</strong> Valladolid, Castilla y León (España)</p>
+    <p><strong>Email:</strong> guillermorepresacoachpersonal@gmail.com</p>
+    <p><strong>Teléfono:</strong> +34 625 19 28 90</p>
+  </div>
+
+  <h2>2. Finalidades del tratamiento</h2>
+  <p>Los datos personales facilitados a través de los canales de contacto del sitio web serán tratados con las siguientes finalidades:</p>
+
+  <ul>
+    <li><strong>Atender solicitudes de información</strong> y consultas remitidas por los usuarios.</li>
+    <li><strong>Gestionar la reserva, seguimiento y prestación del servicio de coaching</strong>, incluyendo la primera sesión gratuita.</li>
+    <li><strong>Mantener la comunicación profesional</strong> con el usuario durante el proceso de coaching.</li>
+    <li><strong>Cumplir las obligaciones legales, fiscales y contables</strong> derivadas de la prestación del servicio.</li>
+    <li><strong>Solicitar valoraciones o testimonios</strong>, siempre con consentimiento expreso previo del cliente.</li>
+  </ul>
+
+  <h2>3. Base jurídica del tratamiento</h2>
+
+  <table>
+    <thead>
+      <tr><th>Finalidad</th><th>Base jurídica</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Responder consultas y solicitudes</td><td>Consentimiento del interesado (art. 6.1.a RGPD)</td></tr>
+      <tr><td>Prestación del servicio de coaching</td><td>Ejecución de contrato (art. 6.1.b RGPD)</td></tr>
+      <tr><td>Obligaciones fiscales y contables</td><td>Obligación legal (art. 6.1.c RGPD)</td></tr>
+      <tr><td>Solicitud de testimonios o reseñas</td><td>Consentimiento expreso e informado</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Datos personales tratados</h2>
+  <p>El titular puede recoger los siguientes tipos de datos, siempre limitados a lo necesario para la finalidad concreta:</p>
+  <ul>
+    <li><strong>Datos identificativos:</strong> nombre y apellidos.</li>
+    <li><strong>Datos de contacto:</strong> teléfono, correo electrónico, perfil de WhatsApp.</li>
+    <li><strong>Datos profesionales o personales</strong> compartidos voluntariamente en el contexto de la sesión de coaching.</li>
+    <li><strong>Datos de pago</strong> en caso de contratación del servicio (gestionados a través de proveedores externos seguros).</li>
+  </ul>
+  <p>No se solicitan ni tratan categorías especiales de datos (salud, ideología, religión, orientación sexual, etc.) salvo que el usuario los comparta voluntariamente durante las sesiones, en cuyo caso quedan amparados por la confidencialidad profesional.</p>
+
+  <h2>5. Plazo de conservación</h2>
+  <p>Los datos se conservarán durante el tiempo necesario para cumplir con las finalidades indicadas:</p>
+  <ul>
+    <li><strong>Solicitudes de información no concretadas:</strong> hasta 1 año tras el último contacto.</li>
+    <li><strong>Datos vinculados a un proceso de coaching activo:</strong> durante toda la duración del proceso y hasta 5 años tras su finalización, con fines de continuidad o reanudación.</li>
+    <li><strong>Documentación fiscal y contable:</strong> 6 años, según la normativa mercantil y tributaria vigente.</li>
+  </ul>
+  <p>Transcurridos los plazos legales, los datos serán bloqueados y posteriormente eliminados de forma segura.</p>
+
+  <h2>6. Destinatarios y cesiones de datos</h2>
+  <p>Los datos personales no serán cedidos a terceros, salvo:</p>
+  <ul>
+    <li>Cuando exista obligación legal de comunicación (Administraciones Públicas, juzgados, Hacienda, etc.).</li>
+    <li>A los proveedores tecnológicos estrictamente necesarios para la prestación del servicio (alojamiento web, herramienta de videollamada, plataforma de pago), siempre bajo contrato de encargo de tratamiento conforme al art. 28 RGPD.</li>
+  </ul>
+  <p>No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo salvo cuando los proveedores tecnológicos utilizados garanticen niveles equivalentes de protección mediante cláusulas contractuales tipo aprobadas por la Comisión Europea.</p>
+
+  <h2>7. Confidencialidad de las sesiones</h2>
+  <p>Toda la información compartida por el cliente durante las sesiones de coaching está amparada por el principio de confidencialidad profesional. No se cederá, divulgará ni utilizará para fines distintos del propio proceso, salvo consentimiento expreso del cliente o cuando exista obligación legal de revelación.</p>
+
+  <h2>8. Derechos del interesado</h2>
+  <p>El usuario podrá ejercer en cualquier momento los siguientes derechos:</p>
+
+  <ul>
+    <li><strong>Acceso:</strong> conocer qué datos personales tratamos sobre ti.</li>
+    <li><strong>Rectificación:</strong> solicitar la corrección de datos inexactos o incompletos.</li>
+    <li><strong>Supresión ("derecho al olvido"):</strong> solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
+    <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos en determinadas circunstancias.</li>
+    <li><strong>Limitación:</strong> solicitar la restricción del tratamiento.</li>
+    <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado y de uso común.</li>
+    <li><strong>Revocación del consentimiento</strong> previamente otorgado en cualquier momento.</li>
+  </ul>
+
+  <p>Estos derechos podrán ejercerse remitiendo una solicitud por escrito, acompañada de copia de documento identificativo, al teléfono o correo electrónico indicados en el apartado 1.</p>
+
+  <p>Si consideras que el tratamiento de tus datos no se ajusta a la normativa aplicable, puedes presentar una reclamación ante la <a class="inline" href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos</a> (C/ Jorge Juan, 6 — 28001 Madrid).</p>
+
+  <h2>9. Medidas de seguridad</h2>
+  <p>El titular ha adoptado las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales, evitando su alteración, pérdida, tratamiento o acceso no autorizado, teniendo en cuenta el estado de la tecnología, la naturaleza de los datos y los riesgos a los que están expuestos.</p>
+
+  <h2>10. Uso de cookies</h2>
+  <p>Este sitio web utiliza exclusivamente cookies técnicas necesarias para su funcionamiento, que no requieren consentimiento previo conforme al artículo 22.2 de la LSSI-CE. En caso de incorporar en el futuro cookies analíticas o de marketing, se solicitará el consentimiento expreso del usuario mediante un banner informativo y se publicará una Política de Cookies específica.</p>
+
+  <h2>11. Menores de edad</h2>
+  <p>Los servicios ofrecidos en este sitio web están dirigidos a personas mayores de 18 años. No se recogen datos personales de menores de edad. En caso de detectar el envío de datos por parte de un menor, se procederá a su eliminación inmediata.</p>
+
+  <h2>12. Modificaciones</h2>
+  <p>La presente Política de Privacidad podrá ser modificada para adaptarla a novedades legislativas o cambios en los servicios prestados. Cualquier modificación será publicada en esta misma página, indicándose la fecha de la última actualización.</p>
+
+</main>
+
+<footer>
+  © 2026 Guillermo Represa · <a href="index.html">Volver al inicio</a> · <a href="aviso-legal.html">Aviso legal</a>
+</footer>
+
+</body>
+</html>

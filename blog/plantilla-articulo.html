@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+PLANTILLA DE ARTÍCULO DE BLOG · Guillermo Represa
+================================================================================
+
+CÓMO USARLA:
+
+1) DUPLICAR este archivo y renombrarlo con el slug del nuevo artículo.
+   Ejemplo:  plantilla-articulo.html  →  decisiones-postergadas.html
+   El nombre del archivo (sin .html) DEBE coincidir exactamente con el campo
+   "slug" del posts.json.
+
+2) SUSTITUIR todos los marcadores [[ ALGO ]] del archivo:
+   - [[ TITULO ]]                  Título completo del artículo
+   - [[ TITULO_CORTO ]]            Versión corta para el <title> del navegador
+   - [[ TITULO_CON_EM ]]           Título con etiqueta <em> alrededor de la
+                                   parte que quieres que aparezca en cursiva teal.
+                                   Ej: Autoexigencia: cuando <em>lo bien</em>...
+   - [[ DESCRIPCION_META ]]        Resumen para Google (150-160 caracteres).
+   - [[ KEYWORDS ]]                Palabras clave separadas por comas.
+   - [[ SLUG ]]                    Mismo slug que usaste como nombre de archivo.
+   - [[ CATEGORIA ]]               "Coaching humanista" / "Recursos" / etc.
+   - [[ FECHA_ISO ]]               Formato YYYY-MM-DD (ej: 2026-06-15)
+   - [[ FECHA_LARGA ]]             "15 de junio de 2026"
+   - [[ MIN_LECTURA ]]             "6 min de lectura"
+   - [[ NUM_PALABRAS ]]            Número aproximado de palabras (entero).
+   - [[ LEAD ]]                    Párrafo introductorio destacado.
+   - [[ TLDR ]]                    Resumen rápido del artículo.
+   - [[ CONTENIDO ]]               Cuerpo del artículo (ver formato más abajo).
+   - [[ ASUNTO_WHATSAPP ]]         Tema corto que aparece en el mensaje
+                                   pre-rellenado de WhatsApp.
+                                   Ej: "tu%20artículo%20sobre%20decisiones"
+   - [[ TAG_1 ]] ... [[ TAG_5 ]]   Hashtags al pie (sin almohadilla).
+   - [[ FAQ_X_PREGUNTA / RESPUESTA ]]  Preguntas frecuentes (5 mínimo recomendado).
+
+3) AÑADIR la entrada en posts.json (al final del array "posts"):
+   {
+     "slug": "decisiones-postergadas",
+     "title": "Decisiones postergadas: por qué llevas meses sin decidir",
+     "excerpt": "Resumen corto que se ve en la tarjeta del blog.",
+     "category": "Coaching humanista",
+     "date": "2026-06-15",
+     "dateDisplay": "15 de junio de 2026",
+     "readTime": "6 min",
+     "icon": "→",
+     "featured": false,
+     "published": true
+   }
+
+4) AÑADIR la URL al sitemap.xml (raíz del proyecto).
+
+5) GIT push → Vercel despliega automáticamente.
+
+================================================================================
+FORMATO DEL CONTENIDO (cuerpo del artículo):
+
+Usa estos elementos respetando los estilos ya definidos:
+
+  <h2>Título de sección</h2>
+  <h3>Subsección</h3>
+  <p>Párrafos normales. Usa <strong>negritas</strong> con moderación.</p>
+
+  <blockquote>"Cita destacada en el cuerpo del artículo."</blockquote>
+
+  <ul>
+    <li><strong>Item con título.</strong> Descripción del item.</li>
+    <li><strong>Otro item.</strong> Más texto.</li>
+  </ul>
+
+  <ol>
+    <li><strong>Paso 1.</strong> Texto del paso.</li>
+    <li><strong>Paso 2.</strong> Texto del paso.</li>
+  </ol>
+
+NO uses imágenes pesadas — el blog está pensado para texto cuidado.
+================================================================================
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fafaf7">
+
+<title>[[ TITULO_CORTO ]] | Guillermo Represa</title>
+<meta name="description" content="[[ DESCRIPCION_META ]]">
+<meta name="keywords" content="[[ KEYWORDS ]]">
+<meta name="author" content="Guillermo Represa">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="[[ TITULO ]]">
+<meta property="og:description" content="[[ DESCRIPCION_META ]]">
+<meta property="og:image" content="../equilibrio.jpg">
+<meta property="og:locale" content="es_ES">
+<meta property="article:author" content="Guillermo Represa">
+<meta property="article:section" content="[[ CATEGORIA ]]">
+
+<link rel="canonical" href="https://guillermorepresa.com/blog/[[ SLUG ]].html">
+<link rel="icon" type="image/svg+xml" href="../logo-coaching.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://guillermorepresa.com/blog/[[ SLUG ]].html#article",
+      "headline": "[[ TITULO ]]",
+      "description": "[[ DESCRIPCION_META ]]",
+      "image": "https://guillermorepresa.com/equilibrio.jpg",
+      "datePublished": "[[ FECHA_ISO ]]",
+      "dateModified": "[[ FECHA_ISO ]]",
+      "author": { "@type": "Person", "@id": "https://guillermorepresa.com/#person", "name": "Guillermo Represa", "url": "https://guillermorepresa.com/" },
+      "publisher": { "@type": "Person", "@id": "https://guillermorepresa.com/#person", "name": "Guillermo Represa" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://guillermorepresa.com/blog/[[ SLUG ]].html" },
+      "keywords": "[[ KEYWORDS ]]",
+      "articleSection": "[[ CATEGORIA ]]",
+      "wordCount": [[ NUM_PALABRAS ]],
+      "inLanguage": "es-ES"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "[[ FAQ_1_PREGUNTA ]]", "acceptedAnswer": { "@type": "Answer", "text": "[[ FAQ_1_RESPUESTA ]]" } },
+        { "@type": "Question", "name": "[[ FAQ_2_PREGUNTA ]]", "acceptedAnswer": { "@type": "Answer", "text": "[[ FAQ_2_RESPUESTA ]]" } },
+        { "@type": "Question", "name": "[[ FAQ_3_PREGUNTA ]]", "acceptedAnswer": { "@type": "Answer", "text": "[[ FAQ_3_RESPUESTA ]]" } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://guillermorepresa.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://guillermorepresa.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "[[ TITULO_CORTO ]]", "item": "https://guillermorepresa.com/blog/[[ SLUG ]].html" }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blanco-puro: #ffffff; --off-white: #fafaf7; --off-white-2: #f5f5f1;
+    --linea: #e4e4df; --teal: #1f5b5e; --teal-claro: #2d7a7e; --teal-suave: #8fb4b6;
+    --teal-rgba-10: rgba(31, 91, 94, 0.1); --teal-rgba-05: rgba(31, 91, 94, 0.05);
+    --negro: #1a1d1d; --gris: #6b6b66; --gris-claro: #9c9c98;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; color: var(--negro); background: var(--off-white); line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased; }
+  .nav-sticky { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 100; background: rgba(255,255,255,0.85); backdrop-filter: blur(24px) saturate(180%); -webkit-backdrop-filter: blur(24px) saturate(180%); border-radius: 999px; padding: 8px 8px 8px 24px; display: flex; align-items: center; gap: 32px; box-shadow: 0 8px 32px -8px rgba(31,91,94,0.15); border: 1px solid rgba(31,91,94,0.08); max-width: calc(100% - 40px); }
+  .nav-sticky .brand { display: flex; align-items: center; gap: 10px; font-family: 'Fraunces',serif; font-size: 0.95rem; color: var(--teal); text-decoration: none; letter-spacing: -0.01em; white-space: nowrap; }
+  .nav-sticky .brand img { width: 26px; height: 26px; border-radius: 6px; }
+  .nav-sticky-links { display: none; align-items: center; gap: 24px; list-style: none; }
+  @media (min-width: 880px) { .nav-sticky-links { display: flex; } }
+  .nav-sticky-links a { color: var(--negro); text-decoration: none; font-size: 0.85rem; white-space: nowrap; transition: color 0.2s; }
+  .nav-sticky-links a:hover { color: var(--teal); }
+  .nav-sticky-cta { background: var(--negro); color: var(--off-white); padding: 8px 18px; border-radius: 999px; font-size: 0.8rem; text-decoration: none; font-weight: 500; transition: all 0.25s var(--ease); white-space: nowrap; }
+  .nav-sticky-cta:hover { background: var(--teal); }
+  article { max-width: 760px; margin: 0 auto; padding: 140px 24px 80px; }
+  .breadcrumb { font-size: 0.8125rem; color: var(--gris); margin-bottom: 32px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .breadcrumb a { color: var(--teal); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb-sep { color: var(--gris-claro); }
+  .article-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: var(--teal-rgba-05); color: var(--teal); border-radius: 999px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 24px; }
+  h1 { font-family: 'Fraunces',serif; font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.025em; font-weight: 400; color: var(--negro); margin-bottom: 24px; }
+  h1 em { font-style: italic; color: var(--teal); font-weight: 300; }
+  .article-meta { display: flex; align-items: center; gap: 16px; color: var(--gris); font-size: 0.875rem; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--linea); flex-wrap: wrap; }
+  .article-meta .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--teal-rgba-10); display: flex; align-items: center; justify-content: center; color: var(--teal); font-weight: 600; font-size: 0.875rem; }
+  .article-meta strong { color: var(--negro); font-weight: 500; }
+  .article-meta .sep { color: var(--linea); }
+  .lead { font-family: 'Fraunces',serif; font-size: 1.375rem; line-height: 1.45; color: var(--negro); font-weight: 300; margin-bottom: 48px; letter-spacing: -0.01em; }
+  article h2 { font-family: 'Fraunces',serif; font-size: 1.875rem; line-height: 1.2; letter-spacing: -0.02em; font-weight: 400; color: var(--negro); margin: 56px 0 20px; }
+  article h3 { font-family: 'Fraunces',serif; font-size: 1.375rem; line-height: 1.3; letter-spacing: -0.01em; font-weight: 500; color: var(--negro); margin: 40px 0 12px; }
+  article p { font-size: 1.0625rem; color: var(--negro); line-height: 1.7; margin-bottom: 20px; }
+  article p strong { color: var(--negro); font-weight: 600; }
+  article ul, article ol { margin: 0 0 24px 0; padding-left: 0; list-style: none; }
+  article ul li, article ol li { position: relative; padding-left: 28px; margin-bottom: 12px; font-size: 1.0625rem; line-height: 1.65; color: var(--negro); }
+  article ul li::before { content: ''; position: absolute; left: 0; top: 12px; width: 14px; height: 1px; background: var(--teal); }
+  article ol { counter-reset: ol-counter; }
+  article ol li { counter-increment: ol-counter; }
+  article ol li::before { content: counter(ol-counter) "."; position: absolute; left: 0; top: 0; color: var(--teal); font-weight: 600; font-family: 'Fraunces',serif; }
+  blockquote { margin: 32px 0; padding: 24px 28px; background: var(--blanco-puro); border-left: 3px solid var(--teal); border-radius: 0 12px 12px 0; font-family: 'Fraunces',serif; font-size: 1.25rem; line-height: 1.45; color: var(--negro); font-style: italic; font-weight: 300; }
+  .tldr { background: var(--teal-rgba-05); border: 1px solid var(--teal-rgba-10); border-radius: 1rem; padding: 24px 28px; margin: 32px 0; }
+  .tldr-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--teal); font-weight: 600; margin-bottom: 8px; }
+  .tldr p { font-size: 1rem; color: var(--negro); margin-bottom: 0; line-height: 1.6; }
+  .article-cta { margin: 60px 0; background: var(--teal); border-radius: 1.5rem; padding: 40px; text-align: center; color: var(--off-white); }
+  .article-cta h3 { color: var(--off-white); margin: 0 0 12px; font-family: 'Fraunces',serif; font-size: 1.5rem; font-weight: 400; }
+  .article-cta p { color: rgba(255,255,255,0.85); margin-bottom: 24px; font-size: 0.9375rem; }
+  .article-cta a { display: inline-flex; align-items: center; gap: 8px; background: var(--off-white); color: var(--teal); padding: 12px 24px; border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: all 0.25s var(--ease); }
+  .article-cta a:hover { background: var(--blanco-puro); transform: translateY(-1px); }
+  .article-faq { margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--linea); }
+  .article-faq h2 { margin-top: 0; }
+  .faq-item { background: var(--blanco-puro); border: 1px solid var(--linea); border-radius: 1rem; margin-bottom: 10px; overflow: hidden; }
+  .faq-item[open] { border-color: var(--teal-suave); }
+  .faq-item summary { padding: 18px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; list-style: none; font-family: 'Fraunces',serif; font-size: 1.0625rem; font-weight: 400; color: var(--negro); }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 1.5rem; font-weight: 300; color: var(--teal); transition: transform 0.3s var(--ease); }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .faq-content { padding: 0 24px 20px; color: var(--gris); font-size: 0.9375rem; line-height: 1.65; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 40px 0; }
+  .tag { padding: 6px 14px; background: var(--off-white-2); color: var(--gris); border-radius: 999px; font-size: 0.8125rem; text-decoration: none; }
+  footer { padding: 40px 24px; text-align: center; color: var(--gris); font-size: 0.8125rem; border-top: 1px solid var(--linea); margin-top: 60px; }
+  footer a { color: var(--teal); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav class="nav-sticky" aria-label="Navegación principal">
+  <a href="../index.html#inicio" class="brand">
+    <img src="../logo-coaching.svg" alt="">
+    <span>Guillermo Represa</span>
+  </a>
+  <ul class="nav-sticky-links" role="menubar">
+    <li role="none"><a href="../index.html#conoceme" role="menuitem">Conóceme</a></li>
+    <li role="none"><a href="../index.html#metodo" role="menuitem">Método</a></li>
+    <li role="none"><a href="../index.html#casos" role="menuitem">Casos de éxito</a></li>
+    <li role="none"><a href="index.html" role="menuitem">Blog</a></li>
+    <li role="none"><a href="../index.html#faq" role="menuitem">FAQ</a></li>
+  </ul>
+  <a href="../index.html#contacto" class="nav-sticky-cta">Sesión gratuita</a>
+</nav>
+
+<article>
+  <nav class="breadcrumb" aria-label="Migas de pan">
+    <a href="../index.html">Inicio</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="index.html">Blog</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>[[ TITULO_CORTO ]]</span>
+  </nav>
+
+  <span class="article-eyebrow">[[ CATEGORIA ]]</span>
+
+  <h1>[[ TITULO_CON_EM ]]</h1>
+
+  <div class="article-meta">
+    <div class="avatar">GR</div>
+    <div>
+      <strong>Guillermo Represa</strong><br>
+      <span style="font-size:0.8125rem">Coach personal humanista</span>
+    </div>
+    <span class="sep">·</span>
+    <span>[[ FECHA_LARGA ]]</span>
+    <span class="sep">·</span>
+    <span>[[ MIN_LECTURA ]]</span>
+  </div>
+
+  <p class="lead">[[ LEAD ]]</p>
+
+  <div class="tldr">
+    <div class="tldr-label">Resumen rápido</div>
+    <p>[[ TLDR ]]</p>
+  </div>
+
+  <!-- ============================================================
+       CUERPO DEL ARTÍCULO
+       Estructura recomendada: 4-7 secciones con <h2>, párrafos,
+       listas y al menos un <blockquote>. Ver instrucciones arriba.
+  ============================================================ -->
+  [[ CONTENIDO ]]
+
+  <div class="article-cta">
+    <h3>¿Te ha resonado este artículo?</h3>
+    <p>La primera sesión es gratuita. 30 minutos para aterrizar lo que está pasando y decidir el siguiente paso.</p>
+    <a href="https://wa.me/34625192890?text=Hola%20Guillermo%2C%20le%C3%AD%20[[ ASUNTO_WHATSAPP ]]%20y%20quiero%20reservar%20una%20sesi%C3%B3n%20gratuita." target="_blank" rel="noopener">
+      Reservar por WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+    </a>
+  </div>
+
+  <section class="article-faq" aria-labelledby="faq-title">
+    <h2 id="faq-title">Preguntas frecuentes</h2>
+
+    <details class="faq-item">
+      <summary>[[ FAQ_1_PREGUNTA ]]</summary>
+      <div class="faq-content">[[ FAQ_1_RESPUESTA ]]</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>[[ FAQ_2_PREGUNTA ]]</summary>
+      <div class="faq-content">[[ FAQ_2_RESPUESTA ]]</div>
+    </details>
+
+    <details class="faq-item">
+      <summary>[[ FAQ_3_PREGUNTA ]]</summary>
+      <div class="faq-content">[[ FAQ_3_RESPUESTA ]]</div>
+    </details>
+
+    <!-- Añade más <details class="faq-item"> aquí si lo necesitas (recomendado: 4-5) -->
+  </section>
+
+  <div class="tags">
+    <a href="#" class="tag">#[[ TAG_1 ]]</a>
+    <a href="#" class="tag">#[[ TAG_2 ]]</a>
+    <a href="#" class="tag">#[[ TAG_3 ]]</a>
+    <a href="#" class="tag">#[[ TAG_4 ]]</a>
+    <a href="#" class="tag">#[[ TAG_5 ]]</a>
+  </div>
+
+</article>
+
+<footer>
+  © 2026 Guillermo Represa · <a href="../index.html">Volver al inicio</a>
+</footer>
+
+</body>
+</html>
